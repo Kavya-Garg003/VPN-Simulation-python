@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Improved Network Topology">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Clients -->
+        <mxCell id="2" value="Client 1&#xa;(Encryption + Hashing)" style="ellipse;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="3" value="Client 2&#xa;(Encryption + Hashing)" style="ellipse;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Internet -->
+        <mxCell id="4" value="Public Network (Internet)" style="rounded=1;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Server -->
+        <mxCell id="5" value="VPN Server&#xa;- Authentication&#xa;- Decryption&#xa;- Integrity Check&#xa;- Logging" style="rounded=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="500" y="160" width="230" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows from clients to internet -->
+        <mxCell id="6" value="Encrypted Data" style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="7" value="Encrypted Data" style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow from internet to server -->
+        <mxCell id="8" value="Secure Transmission (Simulated VPN Tunnel)" style="endArrow=block;strokeWidth=2;dashed=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

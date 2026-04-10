@@ -1,0 +1,5 @@
+('127.0.0.1', 53680) (admin): This is a test message hello
+('127.0.0.1', 53465) (user): Hello from client 1
+('127.0.0.1', 53680) (admin): Hello from client 2
+('127.0.0.1', 61169) (admin): Network security 
+('127.0.0.1', 61169) (admin): hello
